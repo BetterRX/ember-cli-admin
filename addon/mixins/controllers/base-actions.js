@@ -34,7 +34,7 @@ baseActionsMixin = Ember.Mixin.create({
     action: "show",
     iconClass: "glyphicon glyphicon-info-sign"
   }, {
-    title: "Delete",
+    title: "Destroy",
     confirm: "Are you sure you want to delete this?",
     "class": "btn btn-small btn-danger",
     action: "destroy",

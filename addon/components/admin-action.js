@@ -37,7 +37,7 @@ export default Ember.Component.extend(ConfirmationMixin, {
           case "Edit":
             return this._findAction('Edit');
           case "Destroy":
-            return this._findAction('Delete');
+            return this._findAction('Destroy');
           case "Show":
             return this._findAction('Show');
           default:
