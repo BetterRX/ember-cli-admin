@@ -57,7 +57,7 @@ breadcrumbs.reopenClass({
     return "Edit";
   },
   _destroyAction: function() {
-    return "Destroy";
+    return "Delete";
   },
   _showAction: function() {
     return "Show";
