@@ -2,29 +2,30 @@
     <div class="col-md-9">
         {{partial "admin/base/actions/batch"}}
         {{partial "admin/base/table-settings"}}
-
-        <table class="table-view">
-            {{admin-table-head
-                activeTableAttributes=activeTableAttributes
-                sortFields=sortFields
-                orderAscending=orderAscending
-                sort=sort
-                action='sort'
-                batches=__batches
-                items=model.items
-                caseType=caseType
-            }}
-            {{admin-table-body
-                items=model.items
-                activeTableAttributes=activeTableAttributes
-                allActions=allActions
-                itemActions=itemActions
-                additionalActions=additionalActions
-                batches=__batches
-                adminAction='adminAction'
-                actionNew=actionNew
-            }}
-        </table>
+        <div class="table-wrapper">
+            <table class="table-view">
+                {{admin-table-head
+                    activeTableAttributes=activeTableAttributes
+                    sortFields=sortFields
+                    orderAscending=orderAscending
+                    sort=sort
+                    action='sort'
+                    batches=__batches
+                    items=model.items
+                    caseType=caseType
+                }}
+                {{admin-table-body
+                    items=model.items
+                    activeTableAttributes=activeTableAttributes
+                    allActions=allActions
+                    itemActions=itemActions
+                    additionalActions=additionalActions
+                    batches=__batches
+                    adminAction='adminAction'
+                    actionNew=actionNew
+                }}
+            </table>
+        </div>
     </div>
     <div class="col-md-3">
         {{#if isShowSearchForm}}
